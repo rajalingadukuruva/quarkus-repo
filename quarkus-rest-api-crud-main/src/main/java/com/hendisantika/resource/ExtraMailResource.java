@@ -28,7 +28,7 @@ public class ExtraMailResource {
     Mailer mailer;
 
     @GET
-    @Path("/attachment")
+    @Path("/attachments")
     @Blocking
     public void sendEmailWithAttachment() {
         mailer.send(Mail.withText("your-destination-email@quarkus.io", "An email from quarkus with attachment",
